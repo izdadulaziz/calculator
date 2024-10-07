@@ -12,6 +12,8 @@ public enum TokenType{
   TIMES,
   DIVIDE,
   LPAREN,
-  RPAREN
+  RPAREN,
+  NUMBER,
+  ERROR
   
 }
