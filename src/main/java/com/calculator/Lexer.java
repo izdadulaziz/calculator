@@ -1,10 +1,10 @@
 
 
-package com.caculator;
+package com.calculator;
 
 import java.util.ArrayList;
-import com.caculator.tokens.Token;
-import com.caculator.tokens.TokenType;
+import com.calculator.tokens.Token;
+import com.calculator.tokens.TokenType;
 
 public class Lexer{
   
