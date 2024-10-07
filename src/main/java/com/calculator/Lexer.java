@@ -63,7 +63,7 @@ public class Lexer{
     int value = 0; 
     
     while(position < sourceCode.length() && Character.isDigit(sourceCode.charAt(position))){
-      value = value * 10 + (code.charAt(position++) - '0');
+      value = value * 10 + (sourceCode.charAt(position++) - '0');
     }
     
     skip();
