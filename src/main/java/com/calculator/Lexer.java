@@ -3,8 +3,8 @@
 package com.caculator;
 
 import java.util.ArrayList;
-import com.caculator.Token;
-import com.caculator.TokenType;
+import com.caculator.tokens.Token;
+import com.caculator.tokens.TokenType;
 
 public class Lexer{
   
@@ -23,7 +23,7 @@ public class Lexer{
     
     while(position < sourceCode.length()){
       
-      if(Character.isWhitespace(sourceCode.charAt(position)));{
+      if(Character.isWhitespace(sourceCode.charAt(position))){
         
         skip();
         
@@ -86,7 +86,7 @@ public class Lexer{
         return new Token(TokenType.MINUS, "-");
       case '*':
         skip();
-        return new Token(TokenType.TIMES, "*")
+        return new Token(TokenType.TIMES, "*");
       case '/':
         skip();
         return new Token(TokenType.DIVIDE, "/");
