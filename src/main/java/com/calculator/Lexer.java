@@ -60,14 +60,14 @@ public class Lexer{
   }
   
   public Token getNumber(){
-    int value = 0; 
+    StringBuilder sb = new StringBuilder(); 
     
     while(position < sourceCode.length() && Character.isDigit(sourceCode.charAt(position))){
-      value = value * 10 + (sourceCode.charAt(position++) - '0');
+      sb.append(sourceCode.charAt(position));
+      skip();
     }
     
-    skip();
-    return new Token(TokenType.NUMBER, String.valueOf(value));
+    return new Token(TokenType.NUMBER, sb.toString());
     
   }
   
