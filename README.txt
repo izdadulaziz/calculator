@@ -1,2 +1,4 @@
 
 Simple calculator 
+
+BEFORE USING THIS CODE RECOMENDED TO EDIT FILE pom.xml 
